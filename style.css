@@ -319,12 +319,27 @@ SHOP SECTION & PRODUCTS
     font-weight: 500;
 }
 
+/* --- Default/Desktop Styles (Multi-column layout) --- */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Use a min-width slightly smaller, like 250px, to be safer on mobile. 
+       But the main fix is the media query below. */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto 3rem;
+}
+
+/* --- Mobile Fix: Apply this change only for screen widths up to 768px --- */
+@media (max-width: 768px) {
+    .products-grid {
+        /* This overrides the desktop grid-template-columns. 
+           It forces a single column that takes 100% of the available width. */
+        grid-template-columns: 1fr; 
+        /* Also reduce the gap and margin for a better mobile aesthetic. */
+        gap: 1.5rem;
+        margin: 0 1rem 2rem; /* Add some side margin but keep content contained */
+    }
 }
 
 .product-card {
