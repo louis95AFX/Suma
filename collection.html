@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfinityStrands | The Complete Wig Collection</title>
+    <meta name="description" content="Explore the full collection of luxury human hair wigs, closures, and bundles from InfinityStrands. Filter by length, texture, and color.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <custom-navbar></custom-navbar>
+
+    <main class="collection-page">
+        <header class="collection-header">
+            <h1>The Private Collection Wigs</h1>
+            <p>Hand-selected, luxury hair units designed for seamless versatility and infinite confidence.</p>
+        </header>
+
+        <div class="collection-layout">
+            
+            <aside class="sidebar-filters">
+                <h3><i class="fas fa-sliders-h"></i> Filter & Refine</h3>
+
+                <div class="filter-group">
+                    <h4>Texture</h4>
+                    <label><input type="checkbox" data-filter="straight"> Silky Straight</label>
+                    <label><input type="checkbox" data-filter="bodywave"> Body Wave</label>
+                    <label><input type="checkbox" data-filter="deepwave"> Deep Wave</label>
+                    <label><input type="checkbox" data-filter="kinkycurly"> Kinky Curly</label>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Length (Inches)</h4>
+                    <label><input type="checkbox" data-filter="16-20"> 16" - 20"</label>
+                    <label><input type="checkbox" data-filter="22-26"> 22" - 26"</label>
+                    <label><input type="checkbox" data-filter="28-32"> 28" & Longer</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Lace Type</h4>
+                    <label><input type="checkbox" data-filter="hd-lace"> HD Lace Front</label>
+                    <label><input type="checkbox" data-filter="transparent-lace"> Transparent Lace</label>
+                </div>
+                
+                <button class="apply-filters-btn cta-button">Apply Filters</button>
+            </aside>
+            
+            <section class="product-listing">
+                <div class="sort-options">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="bestselling">Best Selling</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+
+                <div class="products-grid-collection">
+                    
+                    <div class="product-card-collection" data-texture="straight" data-length="22-26" data-lace="hd-lace">
+                        <div class="product-image-collection">
+                            <div class="feature-tag">NEW HD LACE</div>
+                            <img src="item3.jpg" alt="The Signature Silk Straight Wig">
+                            <button class="quick-view" aria-label="Quick View Signature Silk"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                        <div class="product-details-collection">
+                            <div class="product-name-rating">
+                                <h3>The Signature Silk</h3>
+                                <span class="star-rating"><i class="fas fa-star"></i> 4.8 (85)</span>
+                            </div>
+                            <p class="product-meta">24" | Brazilian | HD Lace Front</p>
+                            <div class="price-and-action">
+                                <span class="price">R369</span>
+                                <button class="add-to-cart-collection cta-button" data-product-id="s001">
+                                    Add to Cart <i class="fas fa-shopping-bag"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card-collection" data-texture="bodywave" data-length="22-26" data-lace="transparent-lace">
+                        <div class="product-image-collection">
+                            <div class="feature-tag limited">LIMITED COLOR</div>
+                            <img src="item4.jpg" alt="Rose Gold Body Wave Closure Wig">
+                            <button class="quick-view" aria-label="Quick View Rose Gold Waves"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                        <div class="product-details-collection">
+                            <div class="product-name-rating">
+                                <h3>Rose Gold Waves</h3>
+                                <span class="star-rating"><i class="fas fa-star"></i> 4.9 (42)</span>
+                            </div>
+                            <p class="product-meta">22" | Peruvian | Transparent Lace</p>
+                            <div class="price-and-action">
+                                <span class="price">R419</span>
+                                <button class="add-to-cart-collection cta-button" data-product-id="b002">
+                                    Add to Cart <i class="fas fa-shopping-bag"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-collection" data-texture="deepwave" data-length="28-32" data-lace="hd-lace">
+                        <div class="product-image-collection">
+                            <div class="feature-tag">HIGH VOLUME</div>
+                            <img src="item5.jpg" alt="Long Deep Wave Wig">
+                            <button class="quick-view" aria-label="Quick View Deep Wave Goddess"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                        <div class="product-details-collection">
+                            <div class="product-name-rating">
+                                <h3>Deep Wave Goddess</h3>
+                                <span class="star-rating"><i class="fas fa-star"></i> 4.7 (110)</span>
+                            </div>
+                            <p class="product-meta">30" | Vietnamese | HD Lace Front</p>
+                            <div class="price-and-action">
+                                <span class="price">R599</span>
+                                <button class="add-to-cart-collection cta-button" data-product-id="d003">
+                                    Add to Cart <i class="fas fa-shopping-bag"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card-collection" data-texture="kinkycurly" data-length="16-20" data-lace="transparent-lace">
+                        <div class="product-image-collection">
+                            <div class="feature-tag">NATURAL TEXTURE</div>
+                            <img src="item6.jpg" alt="Kinky Curly Textured Wig">
+                            <button class="quick-view" aria-label="Quick View The Kinky Crown"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                        <div class="product-details-collection">
+                            <div class="product-name-rating">
+                                <h3>The Kinky Crown</h3>
+                                <span class="star-rating"><i class="fas fa-star"></i> 5.0 (28)</span>
+                            </div>
+                            <p class="product-meta">18" | Cambodian | Transparent Lace</p>
+                            <div class="price-and-action">
+                                <span class="price">R329</span>
+                                <button class="add-to-cart-collection cta-button" data-product-id="k004">
+                                    Add to Cart <i class="fas fa-shopping-bag"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Next <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+    
+    <a href="https://wa.me/+26876508950" class="whatsapp-float pulse"><i class="fab fa-whatsapp"></i></a>
+    <button class="accessibility-toggle"><i class="fas fa-universal-access"></i></button>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
